@@ -16,4 +16,20 @@ async function ScreenSaverExercise({ params, searchParams }) {
   }
 }
 
+const COLORS = [
+  'AliceBlue',
+  'AntiqueWhite',
+  'Aqua',
+  // ...
+  'WhiteSmoke',
+  'Yellow',
+  'YellowGreen',
+];
+
+export function generateStaticParams() {
+  return COLORS.map((color) => ({
+    color,
+  }));
+}
+
 export default ScreenSaverExercise;
